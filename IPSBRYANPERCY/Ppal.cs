@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace IPSBRYANPERCY
 {
-    class Ppal
+     public  class Ppal
     {
         static void Main(string[] args)
         {
