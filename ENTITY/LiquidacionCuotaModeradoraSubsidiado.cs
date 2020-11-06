@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ENTITY
+{
+    public class LiquidacionCuotaModeradoraSubsidiado : LiquidacionCuotaModeradora
+    {
+       
+            public LiquidacionCuotaModeradoraSubsidiado ()
+            {
+
+            }
+
+            public LiquidacionCuotaModeradoraSubsidiado (string numeroLiquidacion, string idPaciente, string tipoAfiliacion, double salarioPaciente, double valorServicio) : base(numeroLiquidacion, idPaciente, tipoAfiliacion, salarioPaciente, valorServicio)
+            {
+            }
+
+        public override void CalcularTarifa()
+        {
+            Tarifa = 0.05;
+        }
+
+        public override void CalcularTope()
+        {
+            Tope = 200000;
+        }
+
+
+    }
+
+  
+}
