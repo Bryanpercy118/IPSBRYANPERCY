@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace IPSBRYANPERCYGUI
 {
-    public partial class Registrar : Form
+    public partial class FrmPpal : Form
     {
-        public Registrar()
+        public FrmPpal()
         {
             InitializeComponent();
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
         {
 
         }
