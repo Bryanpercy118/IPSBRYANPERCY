@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace IPSBRYANPERCYGUI
+namespace IPSGUI
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace IPSBRYANPERCYGUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmPpal());
+            Application.Run(new FrmPrincipal());
         }
     }
 }

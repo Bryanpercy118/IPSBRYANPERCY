@@ -8,26 +8,27 @@ namespace ENTITY
 {
     public class LiquidacionCuotaModeradoraSubsidiado : LiquidacionCuotaModeradora
     {
-       
-            public LiquidacionCuotaModeradoraSubsidiado ()
-            {
-
-            }
-
-            public LiquidacionCuotaModeradoraSubsidiado (string numeroLiquidacion, string idPaciente, string tipoAfiliacion, double salarioPaciente, double valorServicio) : base(numeroLiquidacion, idPaciente, tipoAfiliacion, salarioPaciente, valorServicio)
-            {
-            }
-
         public override void CalcularTarifa()
         {
-            Tarifa = 0.05;
-        }
+            Tarifa = 5;
 
-        public override void CalcularTope()
-        {
-            Tope = 200000;
-        }
+            CuotaModeradoraReal = ValorServicioHospitalizacion * Tarifa / 100;
+            double Tope = 200000;
+            if (CuotaModeradoraReal > Tope)
+            {
+                CuotaModeradoraFinal = Tope;
+                AplicaTope = "SI";
 
+            }
+            else
+            {
+                CuotaModeradoraFinal = CuotaModeradoraReal;
+                AplicaTope = "NO";
+
+            }
+            Tarifa = Tarifa;
+
+        }
 
     }
 

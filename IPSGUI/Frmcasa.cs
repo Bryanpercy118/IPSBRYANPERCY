@@ -8,23 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace IPSBRYANPERCYGUI
+namespace IPSGUI
 {
-    public partial class FrmPpal : Form
+    public partial class Frmcasa : Form
     {
-        public FrmPpal()
+        public Frmcasa()
         {
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
+            lbFecha.Text = DateTime.Now.ToLongDateString();
+            lblHora.Text = DateTime.Now.ToString("HH:mm:ssss");
         }
     }
 }

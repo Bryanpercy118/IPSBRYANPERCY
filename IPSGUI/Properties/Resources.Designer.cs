@@ -8,10 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace IPSBRYANPERCYGUI.Properties
+
+namespace IPSGUI.Properties
 {
-
-
     /// <summary>
     ///   Clase de recurso fuertemente tipado para buscar cadenas traducidas, etc.
     /// </summary>
@@ -44,7 +43,7 @@ namespace IPSBRYANPERCYGUI.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("IPSBRYANPERCYGUI.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("IPSGUI.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
